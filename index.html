@@ -3,26 +3,30 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                    <div class ="scores" id="homePoint">0</div>
-                    <div class="pts-container">
-                        <button class="pts" onclick="addOneHome()">+1</button>
-                        <button class="pts" onclick="addTwoHome()">+2</button>
-                        <button class="pts" onclick="addThreeHome()">+3</button>
-                    </div>
+        <section>
+            <div class="container">
+                <div>
+                    <h3>HOME</h3>
+                        <div class ="scores" id="homePoint">0</div>
+                        <div class="pts-container">
+                            <button class="pts" onclick="addOneHome()">+1</button>
+                            <button class="pts" onclick="addTwoHome()">+2</button>
+                            <button class="pts" onclick="addThreeHome()">+3</button>
+                        </div>
+                </div>
+                <div>
+                    <h3>GUEST</h3>
+                        <div class ="scores" id="guestPoint">0</div>
+                        <div class="pts-container">
+                            <button class="pts" onclick="addOneGuest()">+1</button>
+                            <button class="pts" onclick="addTwoGuest()">+2</button>
+                            <button class="pts" onclick="addThreeGuest()">+3</button>
+                        </div>
+                </div>
             </div>
-            <div>
-                <h3>GUEST</h3>
-                    <div class ="scores" id="guestPoint">0</div>
-                    <div class="pts-container">
-                        <button class="pts" onclick="addOneGuest()">+1</button>
-                        <button class="pts" onclick="addTwoGuest()">+2</button>
-                        <button class="pts" onclick="addThreeGuest()">+3</button>
-                    </div>
-            </div>
-        </div>
+            <img class="reload" onClick="reload()" src="reload.png" alt="image of a reload icon">
+        </section>
+        
         <script src="index.js"></script>
     </body>
 </html>
